@@ -1,0 +1,144 @@
+#page title
+page_title                                : BeforeShare - Protect your privacy before sharing photos
+
+# App Info
+ios_app_id                                : 6760444994
+ios_app_country                           : us
+
+appstore_link                             : https://apps.apple.com/us/app/id6760444994
+playstore_link                            :
+presskit_download_link                    :
+
+app_icon                                  :
+app_name                                  : BeforeShare
+app_price                                 :
+app_description                           : Detect and blur faces, license plates, QR codes, private text, and metadata before you share photos.
+
+enable_smart_app_banner                   : true
+
+
+# Landing Page Copy
+hero_eyebrow                              : iPhone privacy tool
+hero_title                                : Protect your privacy before sharing photos
+hero_subtitle                             : Automatically detect faces, license plates, QR codes and private text. Everything runs on-device. Your photos never leave your phone.
+hero_preview_image                        : 'assets/screenshot/beforeshare-share-2FCE9635.JPG'
+
+comparison_title                          : Before / After
+comparison_intro                          : Show exactly what changes before a photo leaves your phone.
+comparison_before_label                   : Original Photo
+comparison_after_label                    : Privacy Cleaned Photo
+comparison_before_image                   : 'assets/screenshot/ChatGPT Image 2026年3月17日 10_10_44.jpg'
+comparison_after_image                    : 'assets/screenshot/beforeshare-share-2FCE9635.JPG'
+
+features_title                            : Privacy protection that feels effortless
+features_intro                            : BeforeShare focuses on the details most likely to expose personal information.
+features                                  :
+  - title                                 : Detect Faces
+    description                           : Automatically find and blur faces in photos.
+    fontawesome_icon_name                 : user-secret
+
+  - title                                 : Blur License Plates
+    description                           : Protect vehicle information before sharing.
+    fontawesome_icon_name                 : car-side
+
+  - title                                 : Remove Photo Metadata
+    description                           : Delete location and EXIF data instantly.
+    fontawesome_icon_name                 : map-marker-alt
+
+  - title                                 : 100% On-Device Processing
+    description                           : Your photos never leave your phone.
+    fontawesome_icon_name                 : mobile-alt
+
+steps_title                               : Share safely in three simple steps
+steps_intro                               : Pick a photo, let BeforeShare scan it, and send a safer version anywhere.
+steps                                     :
+  - title                                 : Select a photo
+    description                           : Choose any image from your iPhone photo library.
+
+  - title                                 : Scan for privacy risks
+    description                           : BeforeShare checks for faces, plates, QR codes, text, and metadata.
+
+  - title                                 : Share safely
+    description                           : Export a cleaned photo and post with more confidence.
+
+use_cases_title                           : Made for the moments people share most
+use_cases_intro                           : Helpful when a single photo can reveal more than you intended.
+use_cases                                 :
+  - title                                 : Posting on Social Media
+    description                           : Avoid exposing personal information in photos.
+
+  - title                                 : Sharing Family Photos
+    description                           : Protect your children's privacy.
+
+  - title                                 : Selling a Car Online
+    description                           : Hide license plates before posting.
+
+footer_cta_title                          : Download BeforeShare on the App Store
+footer_cta_subtitle                       : Scan your photos for privacy risks before they leave your iPhone.
+
+
+# Information About Yourself
+your_name                                 :
+your_link                                 :
+your_city                                 :
+email_address                             : x5brain@gmail.com
+facebook_username                         :
+instagram_username                        :
+twitter_username                          :
+github_username                           :
+youtube_username                          :
+mastodon_link                             :
+
+
+# Theme Settings
+topbar_color                              : "#08101c"
+topbar_transparency                       : 0.55
+topbar_title_color                        : "#f3f7ff"
+
+cover_image                               : assets/headerimage.jpeg
+cover_overlay_color                       : "#08101c"
+cover_overlay_transparency                : 0.72
+
+device_color                              : white
+
+body_background_color                     : "#06101b"
+
+link_color                                : "#7fe7ff"
+
+app_title_color                           : "#ffffff"
+app_price_color                           : "#d6e2ff"
+app_description_color                     : "#d3def3"
+
+feature_title_color                       : "#f3f7ff"
+feature_text_color                        : "#aab7d3"
+
+feature_icons_foreground_color            : "#7fe7ff"
+feature_icons_background_color            : "#142136"
+
+social_icons_foreground_color             : "#d0daf0"
+social_icons_background_color             : "#142136"
+
+footer_text_color                         : "#aab7d3"
+
+
+####################################################
+### Jekyll Configuration. No need to touch this. ###
+####################################################
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :compressed # You might prefer to minify using :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - LICENSE
+  - README.md
+  - CNAME
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Markdown rendering
+markdown: kramdown

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body class="homeBody">
+    <a class="skipLink" href="#main-content">Skip to main content</a>
+
+    <div class="siteWidth">
+        {% include header.html %}
+
+        <main id="main-content" class="homeMain">
+            <section class="heroSection" aria-labelledby="hero-title">
+                <div class="heroCopy">
+                    <p class="heroEyebrow">{{ site.hero_eyebrow }}</p>
+                    <h1 id="hero-title">{{ site.hero_title }}</h1>
+                    <p class="heroSubtitle">{{ site.hero_subtitle }}</p>
+                    <ul class="heroHighlights" aria-label="Why BeforeShare">
+                        <li>On-device only</li>
+                        <li>No cloud upload</li>
+                        <li>Built for iPhone photos</li>
+                    </ul>
+                    <div class="downloadButtonsContainer">
+                        <a class="appStoreLink" href="{{ site.appstore_link }}" target="_blank" rel="noopener" aria-label="Download {{ site.app_name }} on the App Store">
+                            <img class="appStore" src="{{ 'assets/appstore.png' | relative_url }}" alt="Download on the App Store">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="heroVisual" aria-label="BeforeShare app preview">
+                    <div class="privacyHalo" aria-hidden="true"></div>
+                    <div class="heroDevice">
+                        <div class="phoneMockup">
+                            <span class="phoneNotch" aria-hidden="true"></span>
+                            <img class="heroPreviewImage" src="{{ site.hero_preview_image | relative_url }}" alt="BeforeShare preview showing a cleaned photo with the license plate blurred">
+                        </div>
+                        <div class="statusBadge statusBadgePrimary">Privacy cleaned</div>
+                        <div class="statusBadge statusBadgeSecondary">Metadata removed</div>
+                    </div>
+                </div>
+            </section>
+
+            {% include comparison.html %}
+            {% include features.html %}
+            {% include steps.html %}
+            {% include usecases.html %}
+        </main>
+
+        {% include footer.html %}
+    </div>
+
+    {% include appstoreimages.html %}
+</body>
+</html>

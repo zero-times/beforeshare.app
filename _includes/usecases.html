@@ -1,0 +1,16 @@
+<section class="contentSection" id="use-cases" aria-labelledby="use-cases-title">
+	<div class="sectionIntro">
+		<p class="sectionEyebrow">Use Cases</p>
+		<h2 id="use-cases-title">{{ site.use_cases_title }}</h2>
+		<p>{{ site.use_cases_intro }}</p>
+	</div>
+
+	<div class="useCaseGrid">
+		{% for use_case in site.use_cases %}
+			<article class="useCaseCard">
+				<h3>{{ use_case.title }}</h3>
+				<p>{{ use_case.description }}</p>
+			</article>
+		{% endfor %}
+	</div>
+</section>

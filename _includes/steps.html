@@ -1,0 +1,19 @@
+<section class="contentSection stepsSection" id="how-it-works" aria-labelledby="steps-title">
+	<div class="sectionIntro">
+		<p class="sectionEyebrow">How It Works</p>
+		<h2 id="steps-title">{{ site.steps_title }}</h2>
+		<p>{{ site.steps_intro }}</p>
+	</div>
+
+	<div class="stepsGrid">
+		{% for step in site.steps %}
+			<article class="stepCard">
+				<span class="stepNumber">0{{ forloop.index }}</span>
+				<h3>{{ step.title }}</h3>
+				{% if step.description %}
+					<p>{{ step.description }}</p>
+				{% endif %}
+			</article>
+		{% endfor %}
+	</div>
+</section>

@@ -1,0 +1,22 @@
+<footer class="siteFooter">
+	<div class="footerCta">
+		<div class="footerCtaCopy">
+			<p class="sectionEyebrow">Ready to Share More Safely?</p>
+			<h2>{{ site.footer_cta_title }}</h2>
+			<p>{{ site.footer_cta_subtitle }}</p>
+		</div>
+		<a class="appStoreLink footerStoreButton" href="{{ site.appstore_link }}" target="_blank" rel="noopener" aria-label="Download {{ site.app_name }} on the App Store">
+			<img class="appStore" src="{{ 'assets/appstore.png' | relative_url }}" alt="Download on the App Store">
+		</a>
+	</div>
+	<div class="footerMeta">
+		<p class="footerText">{{ site.app_name }} keeps photo privacy checks on-device so you can share with more confidence.</p>
+		<div class="footerLinks">
+			<a href="{{ '/privacypolicy/' | relative_url }}" target="_self">Privacy Policy</a>
+			<a href="{{ '/changelog/' | relative_url }}" target="_self">What's New</a>
+			{% if site.email_address %}
+				<a href="mailto:{{ site.email_address }}">Support</a>
+			{% endif %}
+		</div>
+	</div>
+</footer>

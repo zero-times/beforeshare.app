@@ -1,0 +1,25 @@
+<section class="contentSection" id="features" aria-labelledby="features-title">
+	<div class="sectionIntro">
+		<p class="sectionEyebrow">Core Features</p>
+		<h2 id="features-title">{{ site.features_title }}</h2>
+		<p>{{ site.features_intro }}</p>
+	</div>
+	<div class="featureGrid">
+		{% for feature in site.features %}
+			{% if feature.title %}
+				<article class="featureCard">
+					<div class="featureIcon" aria-hidden="true">
+						<span class="fa-stack fa-1x">
+							<i class="iconBack fas fa-circle fa-stack-2x"></i>
+							<i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
+						</span>
+					</div>
+					<div class="featureText">
+						<h3>{{ feature.title }}</h3>
+						<p>{{ feature.description }}</p>
+					</div>
+				</article>
+			{% endif %}
+		{% endfor %}
+	</div>
+</section>

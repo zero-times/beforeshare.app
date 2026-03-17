@@ -1,0 +1,94 @@
+// Layout and grids
+$content-width: 1170px;
+
+// Fonts and sizes
+$font: "Public Sans", "Avenir Next", "Segoe UI", sans-serif;
+$display-font: "Fraunces", "Iowan Old Style", "Georgia", serif;
+$primary-text-color: #000000;
+
+html {
+	font-size: 62.5%;
+	font-family: $font;
+	line-height: 1.5;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 2rem;
+	background-color: $body-color;
+}
+
+.subPageBody {
+	background-color: #fff;
+}
+
+h1 {
+	font-family: $display-font;
+	font-size: 3rem;
+	line-height: 1.05;
+}
+
+h2 {
+	font-family: $display-font;
+	font-size: 2rem;
+	line-height: 1.15;
+}
+
+h3 {
+	font-family: $display-font;
+    font-size: 2rem;
+	line-height: 1.2;
+}
+
+// Better font rendering
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $body-color;
+	color: $primary-text-color;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+	color: $accent-color;
+	text-decoration: none;
+}
+
+a,
+button {
+	transition: transform 180ms ease, opacity 180ms ease, box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+a:focus-visible,
+button:focus-visible {
+	outline: 3px solid rgba($accent-color, 0.9);
+	outline-offset: 4px;
+}
+
+// Shadows
+$drop-shadow: 	drop-shadow(0px 5px 10px rgba(#000, 0.1)) 
+				drop-shadow(0px 1px 1px rgba(#000, 0.2)
+				);
+
+// Various resets
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+::selection {
+	background: rgba($accent-color, 0.28);
+}
