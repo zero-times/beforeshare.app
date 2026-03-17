@@ -12,7 +12,7 @@ presskit_download_link                    :
 app_icon                                  :
 app_name                                  : BeforeShare
 app_price                                 :
-app_description                           : Detect and blur faces, license plates, QR codes, private text, and metadata before you share photos.
+app_description                           : Scan photos on device before you share. Detect faces, screenshots, QR codes and metadata, then export a cleaner version in seconds.
 
 enable_smart_app_banner                   : true
 

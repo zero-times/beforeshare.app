@@ -2,18 +2,20 @@
 layout: page
 title: What's New
 include_in_header: true
+description: BeforeShare helps you do one last privacy check before sending a photo to friends, clients, social apps, or work chats. The app scans on device, highlights possible risks like faces, visible personal details, QR codes, and metadata, then lets you export a safer version to save or share. Your original photo stays local. Use it when you want a fast, calm review step before posting or forwarding any image.
 ---
 
-# Changelog
+# What's New
 <br>
 
 ### `Latest`
 ## **Version 1.0**
-一言日程是一款简洁易用的日程管理应用。通过语音输入或简短文本，您可以快速添加、编辑和删除日程提醒，无需复杂的设置，轻松管理您的待办事项和活动安排。应用提供丰富的提醒选项，包括日期、时间、重复提醒等，让您不会错过任何重要的约会或任务。另外，一言日程还支持智能识别功能，可以从您的输入中提取关键信息，为您自动生成日程提醒，省去不必要的麻烦。快来下载一言日程，让您的生活更加轻松便捷！
+BeforeShare helps you do one last privacy check before sending a photo to friends, clients, social apps, or work chats. The app scans on device, highlights possible risks like faces, visible personal details, QR codes, and metadata, then lets you export a safer version to save or share. Your original photo stays local. Use it when you want a fast, calm review step before posting or forwarding any image.
 
 #### What's New
-- 语音输入
-
-- 时间管理
+- Scan photos on device before you share.
+- Detect faces, screenshots, QR codes and metadata.
+- Export a cleaner version in seconds.
+- Keep your original photo local while you review possible risks.
 
 <br>
