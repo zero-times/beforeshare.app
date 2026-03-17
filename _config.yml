@@ -20,15 +20,42 @@ enable_smart_app_banner                   : true
 # Landing Page Copy
 hero_eyebrow                              : iPhone privacy tool
 hero_title                                : Protect your privacy before sharing photos
-hero_subtitle                             : Automatically detect faces, license plates, QR codes and private text. Everything runs on-device. Your photos never leave your phone.
+hero_subtitle                             : Detect faces, license plates, QR codes and private text in photos. Everything runs on-device. Your photos never leave your phone.
 hero_preview_image                        : 'assets/screenshot/beforeshare-share-2FCE9635.JPG'
+hero_highlights                           :
+  - On-device
+  - No uploads
+  - No data collected
 
 comparison_title                          : Before / After
-comparison_intro                          : Show exactly what changes before a photo leaves your phone.
+comparison_intro                          : Blur sensitive information in seconds.
 comparison_before_label                   : Original Photo
+comparison_scan_label                     : BeforeShare Scan
 comparison_after_label                    : Privacy Cleaned Photo
 comparison_before_image                   : 'assets/screenshot/ChatGPT Image 2026年3月17日 10_10_44.jpg'
+comparison_scan_image                     : 'assets/screenshot/beforeshareing.jpg'
 comparison_after_image                    : 'assets/screenshot/beforeshare-share-2FCE9635.JPG'
+
+detects_title                             : What it detects
+detects_intro                             : "Detect sensitive information in photos:"
+detects                                   :
+  - title                                 : Faces
+    fontawesome_icon_name                 : user
+
+  - title                                 : License plates
+    fontawesome_icon_name                 : car-side
+
+  - title                                 : QR codes
+    fontawesome_icon_name                 : qrcode
+
+  - title                                 : Phone numbers
+    fontawesome_icon_name                 : phone
+
+  - title                                 : Email addresses
+    fontawesome_icon_name                 : envelope
+
+  - title                                 : Location metadata (EXIF)
+    fontawesome_icon_name                 : map-marker-alt
 
 features_title                            : Privacy protection that feels effortless
 features_intro                            : BeforeShare focuses on the details most likely to expose personal information.
@@ -65,13 +92,20 @@ use_cases_title                           : Made for the moments people share mo
 use_cases_intro                           : Helpful when a single photo can reveal more than you intended.
 use_cases                                 :
   - title                                 : Posting on Social Media
-    description                           : Avoid exposing personal information in photos.
+    description                           : Avoid exposing personal information when sharing photos online.
 
   - title                                 : Sharing Family Photos
-    description                           : Protect your children's privacy.
+    description                           : Protect your children's privacy when posting online.
 
   - title                                 : Selling a Car Online
     description                           : Hide license plates before posting.
+
+trust_title                               : Privacy First
+trust_body                                : BeforeShare processes photos entirely on your device. No photos are uploaded to servers. No data is collected.
+trust_points                              :
+  - On-device photo processing
+  - No server uploads
+  - No data collection
 
 footer_cta_title                          : Download BeforeShare on the App Store
 footer_cta_subtitle                       : Scan your photos for privacy risks before they leave your iPhone.

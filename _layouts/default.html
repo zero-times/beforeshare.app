@@ -16,9 +16,9 @@
                     <h1 id="hero-title">{{ site.hero_title }}</h1>
                     <p class="heroSubtitle">{{ site.hero_subtitle }}</p>
                     <ul class="heroHighlights" aria-label="Why BeforeShare">
-                        <li>On-device only</li>
-                        <li>No cloud upload</li>
-                        <li>Built for iPhone photos</li>
+                        {% for item in site.hero_highlights %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
                     </ul>
                     <div class="downloadButtonsContainer">
                         <a class="appStoreLink" href="{{ site.appstore_link }}" target="_blank" rel="noopener" aria-label="Download {{ site.app_name }} on the App Store">
@@ -40,10 +40,12 @@
                 </div>
             </section>
 
+            {% include detects.html %}
             {% include comparison.html %}
             {% include features.html %}
             {% include steps.html %}
             {% include usecases.html %}
+            {% include trust.html %}
         </main>
 
         {% include footer.html %}

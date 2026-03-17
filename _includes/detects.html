@@ -1,0 +1,18 @@
+<section class="contentSection detectsSection" aria-labelledby="detects-title">
+	<div class="sectionIntro">
+		<p class="sectionEyebrow">What It Detects</p>
+		<h2 id="detects-title">{{ site.detects_title }}</h2>
+		<p>{{ site.detects_intro }}</p>
+	</div>
+
+	<div class="detectsGrid" role="list" aria-label="Detected privacy risks">
+		{% for item in site.detects %}
+			<div class="detectItem" role="listitem">
+				<span class="detectIcon" aria-hidden="true">
+					<i class="fas fa-{{ item.fontawesome_icon_name }}"></i>
+				</span>
+				<span>{{ item.title }}</span>
+			</div>
+		{% endfor %}
+	</div>
+</section>

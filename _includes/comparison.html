@@ -1,7 +1,7 @@
 <section class="contentSection comparisonSection" aria-labelledby="comparison-title">
 	<div class="sectionIntro">
 		<p class="sectionEyebrow">{{ site.comparison_title }}</p>
-		<h2 id="comparison-title">See exactly what gets cleaned before you share</h2>
+		<h2 id="comparison-title">Original photo, scan review, and a safer final image</h2>
 		<p>{{ site.comparison_intro }}</p>
 	</div>
 
@@ -10,6 +10,15 @@
 			<img src="{{ site.comparison_before_image | relative_url }}" alt="Original photo with the license plate still visible">
 			<figcaption>
 				<span class="comparisonLabel">{{ site.comparison_before_label }}</span>
+			</figcaption>
+		</figure>
+
+		<div class="comparisonArrow" aria-hidden="true">&rarr;</div>
+
+		<figure class="comparisonCard">
+			<img src="{{ site.comparison_scan_image | relative_url }}" alt="BeforeShare scan screen showing a detected license plate risk">
+			<figcaption>
+				<span class="comparisonLabel">{{ site.comparison_scan_label }}</span>
 			</figcaption>
 		</figure>
 

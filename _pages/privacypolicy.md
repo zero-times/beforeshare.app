@@ -5,42 +5,42 @@ include_in_header: false
 ---
 
 **Last updated**  
-20240322
+20260317
 
 # Privacy Policy
 
-This Privacy Policy explains how TaskEase ("we", "us", or "our") collects, uses, and shares your information when you use our mobile application and related services (collectively, the "Service"). By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.
+This Privacy Policy explains how BeforeShare ("we", "us", or "our") handles information when you use our mobile application and related services (collectively, the "Service").
 
-## Information Collection and Use
+## Photo Processing
 
-### Information We Collect
+BeforeShare is designed to process photos directly on your device. Photos are analyzed on-device so you can review and remove sensitive information before sharing.
 
-- **Personal Information:** We may collect personal information such as your name and email address when you register an account with us.
-- **Usage Data:** We automatically collect usage data, including information about your device and how you interact with the Service.
+## Information We Collect
 
-### Use of Information
+- **Photos:** We do not upload your photos to our servers for processing.
+- **Metadata:** BeforeShare can help remove location and EXIF metadata from exported images on your device.
+- **Support Requests:** If you contact us by email, we will receive the information you include in your message.
 
-We use the collected information for various purposes, including:
-- Providing and maintaining the Service
-- Analyzing and improving the Service
-- Sending you important notifications and updates
-- Responding to your inquiries and support requests
+## How Information Is Used
 
-## Data Sharing and Disclosure
+We use information only to:
 
-We may share your information in the following situations:
-- With service providers who assist us in delivering the Service
-- To comply with legal obligations or protect our rights
-- With your consent or at your direction
+- Provide the app's on-device privacy tools
+- Respond to support emails you send us
+- Improve the app over time
 
-## Security
+## Data Sharing
 
-We take appropriate measures to protect your information from unauthorized access, alteration, disclosure, or destruction.
+We do not sell your photos or personal information. We do not upload photos for cloud-based scanning as part of BeforeShare's core privacy workflow.
+
+## Data Retention
+
+Because photo processing happens on-device, we generally do not retain your photos on our servers. If you email support, we may keep that correspondence as needed to help resolve your issue.
 
 ## Changes to This Privacy Policy
 
-We may update our Privacy Policy from time to time. You are advised to review this Privacy Policy periodically for any changes.
+We may update this Privacy Policy from time to time. Updated versions will be posted on this page.
 
 ## Contact Us
 
-If you have any questions or suggestions about our Privacy Policy, please contact us at [x5brain@gmail.com](mailto:x5brain@gmail.com).
+If you have any questions about this Privacy Policy, please contact us at [x5brain@gmail.com](mailto:x5brain@gmail.com).

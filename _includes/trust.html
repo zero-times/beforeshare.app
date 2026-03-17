@@ -1,0 +1,14 @@
+<section class="contentSection trustSection" aria-labelledby="trust-title">
+	<div class="trustCard">
+		<div class="trustCopy">
+			<p class="sectionEyebrow">Trust</p>
+			<h2 id="trust-title">{{ site.trust_title }}</h2>
+			<p>{{ site.trust_body }}</p>
+		</div>
+		<ul class="trustPoints" aria-label="Privacy guarantees">
+			{% for point in site.trust_points %}
+				<li>{{ point }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

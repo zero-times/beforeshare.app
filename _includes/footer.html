@@ -10,13 +10,14 @@
 		</a>
 	</div>
 	<div class="footerMeta">
-		<p class="footerText">{{ site.app_name }} keeps photo privacy checks on-device so you can share with more confidence.</p>
+		<p class="footerText">{{ site.trust_body }}</p>
 		<div class="footerLinks">
 			<a href="{{ '/privacypolicy/' | relative_url }}" target="_self">Privacy Policy</a>
-			<a href="{{ '/changelog/' | relative_url }}" target="_self">What's New</a>
+			<a href="{{ '/terms/' | relative_url }}" target="_self">Terms of Use</a>
 			{% if site.email_address %}
-				<a href="mailto:{{ site.email_address }}">Support</a>
+				<a href="mailto:{{ site.email_address }}">Support Email</a>
 			{% endif %}
+			<a href="{{ '/changelog/' | relative_url }}" target="_self">What's New</a>
 		</div>
 	</div>
 </footer>
