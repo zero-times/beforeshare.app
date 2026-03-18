@@ -1,0 +1,18 @@
+<section class="contentSection faqSection" aria-labelledby="faq-title">
+	<div class="sectionIntro">
+		<p class="sectionEyebrow">FAQ</p>
+		<h2 id="faq-title">{{ site.faq_title }}</h2>
+		<p>{{ site.faq_intro }}</p>
+	</div>
+
+	<div class="faqList">
+		{% for item in site.faqs %}
+			<details class="faqItem">
+				<summary>{{ item.question }}</summary>
+				<div class="faqAnswer">
+					{{ item.answer | markdownify }}
+				</div>
+			</details>
+		{% endfor %}
+	</div>
+</section>

@@ -1,0 +1,57 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+{% include head.html %}
+
+<body class="subPageBody articleBody">
+	<div class="headerBackground subPageHeaderBackground">
+		<div class="container subPageContainer">
+			<a class="skipLink" href="#main-content">Skip to main content</a>
+			{% include header.html %}
+			<main id="main-content" class="articleShell">
+				<nav class="breadcrumbs" aria-label="Breadcrumb">
+					<a href="{{ '/' | relative_url }}">Home</a>
+					<span aria-hidden="true">/</span>
+					<a href="{{ '/blog/' | relative_url }}">Guides</a>
+					<span aria-hidden="true">/</span>
+					<span aria-current="page">{{ page.title }}</span>
+				</nav>
+
+				<article class="page articlePage markdown-body">
+					<header class="articleHeader">
+						<p class="sectionEyebrow">{{ page.article_eyebrow | default: 'iPhone privacy guide' }}</p>
+						<h1>{{ page.title }}</h1>
+						<p class="articleDek">{{ page.description }}</p>
+						<div class="articleMeta">
+							<span>Updated {{ page.last_modified_at }}</span>
+							<span>{{ page.excerpt }}</span>
+						</div>
+					</header>
+
+					{% include article-cta.html cta_modifier='articleCtaInline' eyebrow='Clean private details faster' title='Check the photo before it leaves your iPhone' body='BeforeShare scans photos on-device so you can blur faces, hide license plates, and remove EXIF metadata before you post or forward an image.' %}
+
+					{{ content }}
+				</article>
+
+				{% include article-cta.html cta_modifier='articleCtaBottom' %}
+
+				<section class="articleRelatedSection" aria-labelledby="related-guides-title">
+					<div class="sectionIntro sectionIntroCompact">
+						<p class="sectionEyebrow">Related guides</p>
+						<h2 id="related-guides-title">Keep exploring photo privacy on iPhone</h2>
+						<p>These guides answer the next questions people usually search after cleaning their first photo.</p>
+					</div>
+					{% include guide_cards.html exclude_url=page.permalink %}
+				</section>
+			</main>
+			{% include footer.html %}
+		</div>
+		{% include appstoreimages.html %}
+	</div>
+</body>
+
+</html>

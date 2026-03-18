@@ -1,0 +1,10 @@
+<section class="articleCta{% if include.cta_modifier %} {{ include.cta_modifier }}{% endif %}">
+	<div class="articleCtaCopy">
+		<p class="sectionEyebrow">{{ include.eyebrow | default: 'BeforeShare for iPhone' }}</p>
+		<h2>{{ include.title | default: site.footer_cta_title }}</h2>
+		<p>{{ include.body | default: site.footer_cta_subtitle }}</p>
+	</div>
+	<a class="appStoreLink" href="{{ site.appstore_link }}" target="_blank" rel="noopener" aria-label="Download {{ site.app_name }} on the App Store">
+		<img class="appStore" src="{{ 'assets/appstore.png' | relative_url }}" alt="Download on the App Store">
+	</a>
+</section>

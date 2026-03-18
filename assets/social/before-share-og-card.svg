@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">BeforeShare social card</title>
+  <desc id="desc">A social preview card for BeforeShare showing before, scan, and cleaned photo privacy states on iPhone.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#07111d" />
+      <stop offset="55%" stop-color="#0c1727" />
+      <stop offset="100%" stop-color="#0f2741" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#7fe7ff" />
+      <stop offset="100%" stop-color="#8db7ff" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" rx="36" />
+  <circle cx="1030" cy="90" r="140" fill="#7fe7ff" fill-opacity="0.14" filter="url(#glow)" />
+  <circle cx="160" cy="60" r="120" fill="#8db7ff" fill-opacity="0.12" filter="url(#glow)" />
+
+  <g transform="translate(72 82)">
+    <text x="0" y="0" fill="#7fe7ff" font-family="Public Sans, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="5">PHOTO PRIVACY APP FOR IPHONE</text>
+    <text x="0" y="76" fill="#f5f8ff" font-family="Georgia, serif" font-size="66" font-weight="700">BeforeShare</text>
+    <text x="0" y="132" fill="#d9e6fb" font-family="Public Sans, Arial, sans-serif" font-size="30">Blur faces, hide license plates, and remove EXIF metadata before sharing photos.</text>
+  </g>
+
+  <g transform="translate(76 228)">
+    <g transform="translate(0 0)">
+      <rect width="296" height="284" rx="30" fill="#111c2e" fill-opacity="0.96" stroke="#273855" />
+      <rect x="24" y="24" width="248" height="190" rx="24" fill="#304865" />
+      <rect x="126" y="112" width="70" height="20" rx="10" fill="#ffd38f" />
+      <rect x="88" y="228" width="120" height="14" rx="7" fill="#f5f8ff" fill-opacity="0.9" />
+      <rect x="108" y="248" width="82" height="10" rx="5" fill="#d6e2f7" fill-opacity="0.72" />
+      <text x="28" y="264" fill="#d6e2f7" font-family="Public Sans, Arial, sans-serif" font-size="22" font-weight="700">Original photo</text>
+    </g>
+
+    <g transform="translate(350 0)">
+      <rect width="296" height="284" rx="30" fill="#111c2e" fill-opacity="0.96" stroke="#273855" />
+      <rect x="24" y="24" width="248" height="190" rx="24" fill="#1d3656" />
+      <rect x="128" y="108" width="66" height="28" rx="14" fill="#7fe7ff" fill-opacity="0.18" stroke="#7fe7ff" stroke-width="3" />
+      <rect x="60" y="64" width="176" height="22" rx="11" fill="#102742" />
+      <rect x="60" y="94" width="132" height="12" rx="6" fill="#8db7ff" fill-opacity="0.28" />
+      <circle cx="222" cy="70" r="10" fill="#7fe7ff" />
+      <text x="28" y="264" fill="#d6e2f7" font-family="Public Sans, Arial, sans-serif" font-size="22" font-weight="700">Scan private details</text>
+    </g>
+
+    <g transform="translate(700 0)">
+      <rect width="296" height="284" rx="30" fill="#111c2e" fill-opacity="0.96" stroke="#273855" />
+      <rect x="24" y="24" width="248" height="190" rx="24" fill="#2a4565" />
+      <rect x="120" y="110" width="84" height="24" rx="12" fill="url(#accent)" />
+      <rect x="68" y="232" width="160" height="14" rx="7" fill="#f5f8ff" fill-opacity="0.94" />
+      <rect x="98" y="252" width="100" height="10" rx="5" fill="#d6e2f7" fill-opacity="0.72" />
+      <text x="28" y="264" fill="#d6e2f7" font-family="Public Sans, Arial, sans-serif" font-size="22" font-weight="700">Privacy cleaned photo</text>
+    </g>
+  </g>
+
+  <g transform="translate(78 566)">
+    <rect width="150" height="34" rx="17" fill="#122136" stroke="#294363" />
+    <text x="75" y="23" text-anchor="middle" fill="#f5f8ff" font-family="Public Sans, Arial, sans-serif" font-size="17" font-weight="700">On-device</text>
+    <rect x="166" width="146" height="34" rx="17" fill="#122136" stroke="#294363" />
+    <text x="239" y="23" text-anchor="middle" fill="#f5f8ff" font-family="Public Sans, Arial, sans-serif" font-size="17" font-weight="700">No uploads</text>
+    <rect x="328" width="192" height="34" rx="17" fill="#122136" stroke="#294363" />
+    <text x="424" y="23" text-anchor="middle" fill="#f5f8ff" font-family="Public Sans, Arial, sans-serif" font-size="17" font-weight="700">No data collected</text>
+  </g>
+</svg>

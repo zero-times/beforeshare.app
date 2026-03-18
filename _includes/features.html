@@ -17,6 +17,9 @@
 					<div class="featureText">
 						<h3>{{ feature.title }}</h3>
 						<p>{{ feature.description }}</p>
+						{% if feature.guide_url %}
+							<a class="contentLink" href="{{ feature.guide_url | relative_url }}">{{ feature.guide_label | default: 'Read the guide' }}</a>
+						{% endif %}
 					</div>
 				</article>
 			{% endif %}

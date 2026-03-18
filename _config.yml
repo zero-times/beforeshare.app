@@ -1,5 +1,14 @@
 #page title
-page_title                                : BeforeShare - Protect your privacy before sharing photos
+page_title                                : BeforeShare - Photo Privacy App for iPhone
+url                                       : https://youllbe.cn
+baseurl                                   : /beforeshare.app
+lang                                      : en-US
+default_keywords                          : photo privacy app for iPhone, blur faces in photos, blur license plates, remove EXIF metadata, remove location from photos, on-device photo privacy
+default_og_image                          : /assets/social/before-share-og-card.png
+og_image_alt                              : BeforeShare social preview showing a photo privacy workflow for iPhone
+social_share_title                        : BeforeShare - Check photos for privacy leaks before sharing
+social_share_description                  : Blur faces, license plates, QR codes, and remove EXIF metadata on iPhone. Everything runs on-device. No uploads.
+twitter_site                              :
 
 # App Info
 ios_app_id                                : 6760444994
@@ -12,16 +21,16 @@ presskit_download_link                    :
 app_icon                                  :
 app_name                                  : BeforeShare
 app_price                                 :
-app_description                           : Scan photos on device before you share. Detect faces, screenshots, QR codes and metadata, then export a cleaner version in seconds.
+app_description                           : Blur faces, hide license plates, remove EXIF metadata, and clean private details before sharing photos on iPhone. Everything runs on-device.
 
 enable_smart_app_banner                   : true
 
 
 # Landing Page Copy
-hero_eyebrow                              : iPhone privacy tool
+hero_eyebrow                              : Photo privacy app for iPhone
 hero_title                                : Protect your privacy before sharing photos
-hero_subtitle                             : Detect faces, license plates, QR codes and private text in photos. Everything runs on-device. Your photos never leave your phone.
-hero_preview_image                        : 'assets/screenshot/beforeshare-share-2FCE9635.JPG'
+hero_subtitle                             : Detect faces, blur license plates, remove EXIF metadata, and clean private details before sharing photos on iPhone. Everything runs on-device. Your photos never leave your phone.
+hero_preview_image                        : 'assets/screenshot/privacy-cleaned-photo-license-plate-blurred.jpg'
 hero_highlights                           :
   - On-device
   - No uploads
@@ -32,12 +41,12 @@ comparison_intro                          : Blur sensitive information in second
 comparison_before_label                   : Original Photo
 comparison_scan_label                     : BeforeShare Scan
 comparison_after_label                    : Privacy Cleaned Photo
-comparison_before_image                   : 'assets/screenshot/ChatGPT Image 2026年3月17日 10_10_44.jpg'
-comparison_scan_image                     : 'assets/screenshot/beforeshareing.jpg'
-comparison_after_image                    : 'assets/screenshot/beforeshare-share-2FCE9635.JPG'
+comparison_before_image                   : 'assets/screenshot/original-photo-license-plate-visible.jpg'
+comparison_scan_image                     : 'assets/screenshot/beforeshare-scan-license-plate-detected.png'
+comparison_after_image                    : 'assets/screenshot/privacy-cleaned-photo-license-plate-blurred.jpg'
 
 detects_title                             : What it detects
-detects_intro                             : "Detect sensitive information in photos:"
+detects_intro                             : "BeforeShare helps you blur faces in photos, hide license plates, remove location from photos, and clean other private details before you share."
 detects                                   :
   - title                                 : Faces
     fontawesome_icon_name                 : user
@@ -58,23 +67,31 @@ detects                                   :
     fontawesome_icon_name                 : map-marker-alt
 
 features_title                            : Privacy protection that feels effortless
-features_intro                            : BeforeShare focuses on the details most likely to expose personal information.
+features_intro                            : BeforeShare is a photo privacy app for iPhone that helps you blur faces, hide license plates, and remove EXIF metadata before a photo leaves your device.
 features                                  :
   - title                                 : Detect Faces
     description                           : Automatically find and blur faces in photos.
     fontawesome_icon_name                 : user-secret
+    guide_url                             : /blog/how-to-blur-faces-in-photos-on-iphone/
+    guide_label                           : Read the face blur guide
 
   - title                                 : Blur License Plates
     description                           : Protect vehicle information before sharing.
     fontawesome_icon_name                 : car-side
+    guide_url                             : /blog/how-to-hide-license-plates-in-photos/
+    guide_label                           : Read the license plate guide
 
   - title                                 : Remove Photo Metadata
     description                           : Delete location and EXIF data instantly.
     fontawesome_icon_name                 : map-marker-alt
+    guide_url                             : /blog/how-to-remove-exif-from-photos-on-iphone/
+    guide_label                           : Read the EXIF guide
 
   - title                                 : 100% On-Device Processing
     description                           : Your photos never leave your phone.
     fontawesome_icon_name                 : mobile-alt
+    guide_url                             : /blog/
+    guide_label                           : Explore all privacy guides
 
 steps_title                               : Share safely in three simple steps
 steps_intro                               : Pick a photo, let BeforeShare scan it, and send a safer version anywhere.
@@ -89,16 +106,43 @@ steps                                     :
     description                           : Export a cleaned photo and post with more confidence.
 
 use_cases_title                           : Made for the moments people share most
-use_cases_intro                           : Helpful when a single photo can reveal more than you intended.
+use_cases_intro                           : Great for screenshots, family photos, marketplace listings, and social media posts when a single image can reveal more than you intended.
 use_cases                                 :
   - title                                 : Posting on Social Media
     description                           : Avoid exposing personal information when sharing photos online.
+    guide_url                             : /blog/how-to-blur-faces-in-photos-on-iphone/
+    guide_label                           : Learn how to blur faces on iPhone
 
   - title                                 : Sharing Family Photos
     description                           : Protect your children's privacy when posting online.
+    guide_url                             : /blog/how-to-blur-faces-in-photos-on-iphone/
+    guide_label                           : Protect faces before you post
 
   - title                                 : Selling a Car Online
     description                           : Hide license plates before posting.
+    guide_url                             : /blog/how-to-hide-license-plates-in-photos/
+    guide_label                           : Hide license plates before listing
+
+guides_title                              : Privacy guides for high-intent searches
+guides_intro                              : These search-friendly guides answer the exact questions people ask before sharing photos from iPhone.
+guides                                    :
+  - title                                 : How to Blur Faces in Photos on iPhone
+    url                                   : /blog/how-to-blur-faces-in-photos-on-iphone/
+    keyword                               : blur faces in photos iphone
+    description                           : Learn practical ways to hide faces before sharing family photos, screenshots, and social posts from your iPhone.
+    cta_label                             : Read the guide
+
+  - title                                 : How to Remove EXIF Metadata from Photos on iPhone
+    url                                   : /blog/how-to-remove-exif-from-photos-on-iphone/
+    keyword                               : remove exif from photo iphone
+    description                           : Understand what EXIF reveals, how to remove location data, and how to export a cleaner image before you share it.
+    cta_label                             : Read the guide
+
+  - title                                 : How to Hide License Plates in Photos Before Sharing
+    url                                   : /blog/how-to-hide-license-plates-in-photos/
+    keyword                               : blur license plate in photo
+    description                           : Protect vehicle details before posting car photos to marketplaces, chats, or social media.
+    cta_label                             : Read the guide
 
 trust_title                               : Privacy First
 trust_body                                : BeforeShare processes photos entirely on your device. No photos are uploaded to servers. No data is collected.
@@ -106,6 +150,27 @@ trust_points                              :
   - On-device photo processing
   - No server uploads
   - No data collection
+
+faq_title                                 : Frequently asked questions about photo privacy on iPhone
+faq_intro                                 : Use these quick answers to understand how BeforeShare helps you blur faces, hide license plates, and remove metadata before you share.
+faqs                                      :
+  - question                              : How do I blur faces in photos on iPhone?
+    answer                                : BeforeShare scans photos on-device and helps you blur faces before sharing. See our [guide to blurring faces on iPhone](/blog/how-to-blur-faces-in-photos-on-iphone/).
+
+  - question                              : How do I remove EXIF metadata from a photo?
+    answer                                : BeforeShare removes location and EXIF metadata before export. See our [guide to removing EXIF metadata on iPhone](/blog/how-to-remove-exif-from-photos-on-iphone/).
+
+  - question                              : Can I hide a license plate before posting a photo online?
+    answer                                : Yes. BeforeShare detects license plates and helps you block them before sharing. See our [license plate privacy guide](/blog/how-to-hide-license-plates-in-photos/).
+
+  - question                              : Does BeforeShare upload my photos?
+    answer                                : No. Photos are processed entirely on your device. No uploads. No data collected.
+
+  - question                              : What kinds of private details can BeforeShare detect?
+    answer                                : BeforeShare can detect faces, license plates, QR codes, phone numbers, email addresses, and location metadata before you export a cleaner version.
+
+  - question                              : Is BeforeShare only for social media posts?
+    answer                                : No. It is also useful for family photos, screenshots, and marketplace listings. You can explore more use cases in our [privacy guides](/blog/).
 
 footer_cta_title                          : Download BeforeShare on the App Store
 footer_cta_subtitle                       : Scan your photos for privacy risks before they leave your iPhone.
@@ -176,3 +241,6 @@ collections:
 
 # Markdown rendering
 markdown: kramdown
+
+plugins:
+  - jekyll-sitemap

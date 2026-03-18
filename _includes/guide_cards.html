@@ -1,0 +1,12 @@
+<div class="guidesGrid">
+	{% for guide in site.guides %}
+		{% unless guide.url == include.exclude_url %}
+			<article class="guideCard">
+				<p class="guideKeyword">{{ guide.keyword }}</p>
+				<h3><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a></h3>
+				<p>{{ guide.description }}</p>
+				<a class="contentLink" href="{{ guide.url | relative_url }}">{{ guide.cta_label | default: 'Read the guide' }}</a>
+			</article>
+		{% endunless %}
+	{% endfor %}
+</div>

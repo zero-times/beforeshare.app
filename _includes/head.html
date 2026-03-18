@@ -2,13 +2,52 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="{{ site.topbar_color }}">
 	{% assign meta_title = site.page_title %}
 	{% if page.title and page.url != '/' %}
-		{% assign meta_title = page.title | append: ' - ' | append: site.app_name %}
+		{% assign meta_title = page.title | append: ' | ' | append: site.app_name %}
+	{% endif %}
+	{% assign meta_description = page.description | default: site.app_description %}
+	{% assign meta_keywords = page.keywords | default: site.default_keywords %}
+	{% assign raw_og_image = page.og_image | default: site.default_og_image %}
+	{% if raw_og_image contains '://' %}
+		{% assign og_image = raw_og_image %}
+	{% else %}
+		{% assign og_image = raw_og_image | absolute_url %}
+	{% endif %}
+	{% assign canonical_url = page.canonical_url | default: page.url | absolute_url %}
+	{% assign og_title = page.og_title | default: meta_title %}
+	{% assign og_description = page.og_description | default: meta_description %}
+	{% assign og_type = 'website' %}
+	{% if page.layout == 'article' %}
+		{% assign og_type = 'article' %}
 	{% endif %}
 
 	<title class="pageTitle">{{ meta_title }}</title>
-	<meta name="description" content="{{ page.description | default: site.app_description }}">
+	<meta name="description" content="{{ meta_description }}">
+	<meta name="keywords" content="{{ meta_keywords }}">
+	<meta name="robots" content="{{ page.robots | default: 'index,follow' }}">
+	<link rel="canonical" href="{{ canonical_url }}">
+
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="{{ og_type }}">
+	<meta property="og:site_name" content="{{ site.app_name }}">
+	<meta property="og:title" content="{{ og_title }}">
+	<meta property="og:description" content="{{ og_description }}">
+	<meta property="og:url" content="{{ canonical_url }}">
+	<meta property="og:image" content="{{ og_image }}">
+	<meta property="og:image:alt" content="{{ page.og_image_alt | default: site.og_image_alt }}">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="{{ og_title }}">
+	<meta name="twitter:description" content="{{ og_description }}">
+	<meta name="twitter:image" content="{{ og_image }}">
+	{% if site.twitter_site %}
+		<meta name="twitter:site" content="{{ site.twitter_site }}">
+	{% endif %}
+	{% if page.layout == 'article' and page.last_modified_at %}
+		<meta property="article:modified_time" content="{{ page.last_modified_at }}">
+	{% endif %}
 
 {% if site.app_icon %}
 	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
@@ -26,4 +65,59 @@
 	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
+
+	{% if page.url == '/' %}
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "SoftwareApplication",
+		"name": {{ site.app_name | jsonify }},
+		"applicationCategory": "UtilitiesApplication",
+		"operatingSystem": "iOS",
+		"description": {{ site.app_description | jsonify }},
+		"url": {{ '/' | absolute_url | jsonify }},
+		"downloadUrl": {{ site.appstore_link | jsonify }},
+		"image": {{ og_image | jsonify }}
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+			{% for item in site.faqs %}
+			{
+				"@type": "Question",
+				"name": {{ item.question | jsonify }},
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": {{ item.answer | markdownify | strip_html | strip_newlines | replace: '  ', ' ' | jsonify }}
+				}
+			}{% unless forloop.last %},{% endunless %}
+			{% endfor %}
+		]
+	}
+	</script>
+	{% endif %}
+	{% if page.layout == 'article' %}
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Article",
+		"headline": {{ page.title | jsonify }},
+		"description": {{ meta_description | jsonify }},
+		"author": {
+			"@type": "Organization",
+			"name": {{ site.app_name | jsonify }}
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": {{ site.app_name | jsonify }}
+		},
+		"mainEntityOfPage": {{ canonical_url | jsonify }},
+		"dateModified": {{ page.last_modified_at | default: '2026-03-18' | jsonify }},
+		"image": {{ og_image | jsonify }}
+	}
+	</script>
+	{% endif %}
 </head>

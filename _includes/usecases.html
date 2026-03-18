@@ -10,6 +10,9 @@
 			<article class="useCaseCard">
 				<h3>{{ use_case.title }}</h3>
 				<p>{{ use_case.description }}</p>
+				{% if use_case.guide_url %}
+					<a class="contentLink" href="{{ use_case.guide_url | relative_url }}">{{ use_case.guide_label | default: 'Read the guide' }}</a>
+				{% endif %}
 			</article>
 		{% endfor %}
 	</div>

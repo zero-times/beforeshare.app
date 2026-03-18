@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
 {% include head.html %}
 
@@ -32,7 +32,7 @@
                     <div class="heroDevice">
                         <div class="phoneMockup">
                             <span class="phoneNotch" aria-hidden="true"></span>
-                            <img class="heroPreviewImage" src="{{ site.hero_preview_image | relative_url }}" alt="BeforeShare preview showing a cleaned photo with the license plate blurred">
+                            <img class="heroPreviewImage" src="{{ site.hero_preview_image | relative_url }}" alt="Privacy cleaned iPhone photo with a blurred license plate and removed metadata">
                         </div>
                         <div class="statusBadge statusBadgePrimary">Privacy cleaned</div>
                         <div class="statusBadge statusBadgeSecondary">Metadata removed</div>
@@ -45,7 +45,9 @@
             {% include features.html %}
             {% include steps.html %}
             {% include usecases.html %}
+            {% include guides-home.html %}
             {% include trust.html %}
+            {% include faq.html %}
         </main>
 
         {% include footer.html %}
