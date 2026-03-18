@@ -16,7 +16,13 @@
 			<a href="{{ '/terms/' | relative_url }}" target="_self">Terms of Use</a>
 			<a href="{{ '/blog/' | relative_url }}" target="_self">Guides</a>
 			{% if site.email_address %}
-				<a href="mailto:{{ site.email_address }}">Support Email</a>
+				<a href="mailto:{{ site.email_address }}">Support: {{ site.email_address }}</a>
+			{% endif %}
+			{% if site.twitter_username %}
+				<a href="https://x.com/{{ site.twitter_username }}" target="_blank" rel="noopener">X: @{{ site.twitter_username }}</a>
+			{% endif %}
+			{% if site.product_hunt_username %}
+				<a href="https://www.producthunt.com/@{{ site.product_hunt_username }}" target="_blank" rel="noopener">Product Hunt: {{ site.product_hunt_username }}</a>
 			{% endif %}
 			<a href="{{ '/changelog/' | relative_url }}" target="_self">What's New</a>
 		</div>

@@ -8,7 +8,7 @@ default_og_image                          : /assets/social/before-share-og-card.
 og_image_alt                              : BeforeShare social preview showing a photo privacy workflow for iPhone
 social_share_title                        : BeforeShare - Check photos for privacy leaks before sharing
 social_share_description                  : Blur faces, license plates, QR codes, and remove EXIF metadata on iPhone. Everything runs on-device. No uploads.
-twitter_site                              :
+twitter_site                              : '@BeforeShareApp'
 
 # App Info
 ios_app_id                                : 6760444994
@@ -183,8 +183,9 @@ your_city                                 :
 email_address                             : x5brain@gmail.com
 facebook_username                         :
 instagram_username                        :
-twitter_username                          :
+twitter_username                          : BeforeShareApp
 github_username                           :
+product_hunt_username                     : hoa4
 youtube_username                          :
 mastodon_link                             :
 
