@@ -7,9 +7,12 @@ permalink: /blog/
 og_image: /assets/social/before-share-og-card.png
 excerpt: Learn how to clean private details from photos before you share them from iPhone.
 last_modified_at: 2026-03-18
+page_eyebrow: Search-friendly guides
+page_highlights:
+  - Blur faces on iPhone
+  - Remove EXIF metadata
+  - Hide license plates
 ---
-
-# Privacy Guides
 
 BeforeShare publishes short, practical guides for people who want to clean private details from photos before sharing them from iPhone.
 

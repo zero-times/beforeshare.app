@@ -12,7 +12,8 @@
         <div class="container subPageContainer">
             <a class="skipLink" href="#main-content">Skip to main content</a>
             {% include header.html %}
-            <main id="main-content">
+            <main id="main-content" class="subPageMain">
+                {% include subpage-hero.html %}
                 <article class="page markdown-body">
                     {{ content }}
                 </article>

@@ -2,12 +2,12 @@
 layout: page
 title: Terms of Use
 include_in_header: false
+description: Terms that govern how you use BeforeShare and its on-device photo privacy features.
+page_eyebrow: Legal
 ---
 
 **Last updated**  
 20260317
-
-# Terms of Use
 
 These Terms of Use govern your use of BeforeShare and related services. By downloading or using the app, you agree to these terms.
 

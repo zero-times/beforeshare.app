@@ -2,12 +2,12 @@
 layout: page
 title: Privacy Policy
 include_in_header: false
+description: How BeforeShare handles photos, metadata, support emails, and on-device processing.
+page_eyebrow: Legal
 ---
 
 **Last updated**  
 20260317
-
-# Privacy Policy
 
 This Privacy Policy explains how BeforeShare ("we", "us", or "our") handles information when you use our mobile application and related services (collectively, the "Service").
 

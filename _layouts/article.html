@@ -12,25 +12,14 @@
 		<div class="container subPageContainer">
 			<a class="skipLink" href="#main-content">Skip to main content</a>
 			{% include header.html %}
-			<main id="main-content" class="articleShell">
-				<nav class="breadcrumbs" aria-label="Breadcrumb">
-					<a href="{{ '/' | relative_url }}">Home</a>
-					<span aria-hidden="true">/</span>
-					<a href="{{ '/blog/' | relative_url }}">Guides</a>
-					<span aria-hidden="true">/</span>
-					<span aria-current="page">{{ page.title }}</span>
-				</nav>
+			<main id="main-content" class="subPageMain articleShell">
+				{% include subpage-hero.html %}
 
 				<article class="page articlePage markdown-body">
-					<header class="articleHeader">
-						<p class="sectionEyebrow">{{ page.article_eyebrow | default: 'iPhone privacy guide' }}</p>
-						<h1>{{ page.title }}</h1>
-						<p class="articleDek">{{ page.description }}</p>
-						<div class="articleMeta">
-							<span>Updated {{ page.last_modified_at }}</span>
-							<span>{{ page.excerpt }}</span>
-						</div>
-					</header>
+					<div class="articleMeta">
+						<span>Updated {{ page.last_modified_at }}</span>
+						<span>{{ page.excerpt }}</span>
+					</div>
 
 					{% include article-cta.html cta_modifier='articleCtaInline' eyebrow='Clean private details faster' title='Check the photo before it leaves your iPhone' body='BeforeShare scans photos on-device so you can blur faces, hide license plates, and remove EXIF metadata before you post or forward an image.' %}
 
