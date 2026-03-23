@@ -34,7 +34,7 @@ hero_preview_image                        : 'assets/screenshot/privacy-cleaned-p
 hero_highlights                           :
   - On-device
   - No uploads
-  - No data collected
+  - No cloud scanning
 
 comparison_title                          : Before / After
 comparison_intro                          : Blur sensitive information in seconds.
@@ -145,11 +145,11 @@ guides                                    :
     cta_label                             : Read the guide
 
 trust_title                               : Privacy First
-trust_body                                : BeforeShare processes photos entirely on your device. No photos are uploaded to servers. No data is collected.
+trust_body                                : BeforeShare processes photos entirely on your device. No photos are uploaded to servers, and no photo or face data is shared with third parties.
 trust_points                              :
   - On-device photo processing
   - No server uploads
-  - No data collection
+  - No photo or face data sharing
 
 faq_title                                 : Frequently asked questions about photo privacy on iPhone
 faq_intro                                 : Use these quick answers to understand how BeforeShare helps you blur faces, hide license plates, and remove metadata before you share.
@@ -164,7 +164,7 @@ faqs                                      :
     answer                                : Yes. BeforeShare detects license plates and helps you block them before sharing. See our [license plate privacy guide](/blog/how-to-hide-license-plates-in-photos/).
 
   - question                              : Does BeforeShare upload my photos?
-    answer                                : No. Photos are processed entirely on your device. No uploads. No data collected.
+    answer                                : No. Photos are processed entirely on your device. No uploads. No cloud scanning.
 
   - question                              : What kinds of private details can BeforeShare detect?
     answer                                : BeforeShare can detect faces, license plates, QR codes, phone numbers, email addresses, and location metadata before you export a cleaner version.
@@ -234,6 +234,11 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - Gemfile.lock
+  - .bundle
+  - .sass-cache
+  - vendor
+  - privacy-declaration-checklist.md
 
 collections:
   pages:
