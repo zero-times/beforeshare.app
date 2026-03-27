@@ -1,14 +1,16 @@
 <footer class="siteFooter">
-	<div class="footerCta">
-		<div class="footerCtaCopy">
-			<p class="sectionEyebrow">Ready to Share More Safely?</p>
-			<h2>{{ site.footer_cta_title }}</h2>
-			<p>{{ site.footer_cta_subtitle }}</p>
+	{% unless page.url == '/' %}
+		<div class="footerCta">
+			<div class="footerCtaCopy">
+				<p class="sectionEyebrow">Ready to Share More Safely?</p>
+				<h2>Download BeforeShare on the App Store</h2>
+				<p>Scan your photos for privacy risks before they leave your iPhone.</p>
+			</div>
+			<a class="appStoreLink footerStoreButton" href="{{ site.appstore_link }}" target="_blank" rel="noopener" aria-label="Download {{ site.app_name }} on the App Store">
+				<img class="appStore" src="{{ 'assets/appstore.png' | relative_url }}" alt="Download on the App Store">
+			</a>
 		</div>
-		<a class="appStoreLink footerStoreButton" href="{{ site.appstore_link }}" target="_blank" rel="noopener" aria-label="Download {{ site.app_name }} on the App Store">
-			<img class="appStore" src="{{ 'assets/appstore.png' | relative_url }}" alt="Download on the App Store">
-		</a>
-	</div>
+	{% endunless %}
 	<div class="footerMeta">
 		<p class="footerText">{{ site.trust_body }}</p>
 		<div class="footerLinks">

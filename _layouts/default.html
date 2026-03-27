@@ -10,44 +10,185 @@
         {% include header.html %}
 
         <main id="main-content" class="homeMain">
-            <section class="heroSection" aria-labelledby="hero-title">
+            <section class="heroSection heroSectionConversion" id="download" aria-labelledby="hero-title">
                 <div class="heroCopy">
-                    <p class="heroEyebrow">{{ site.hero_eyebrow }}</p>
-                    <h1 id="hero-title">{{ site.hero_title }}</h1>
-                    <p class="heroSubtitle">{{ site.hero_subtitle }}</p>
-                    <ul class="heroHighlights" aria-label="Why BeforeShare">
-                        {% for item in site.hero_highlights %}
-                            <li>{{ item }}</li>
-                        {% endfor %}
+                    <p class="heroEyebrow">Check before you send</p>
+                    <h1 id="hero-title">The photo you are about to send could be exposing more than you think</h1>
+                    <p class="heroSubtitle">License plates, location clues, QR codes, and personal details can travel with a single image. BeforeShare checks your photo right from the iPhone share sheet, before you hit send.</p>
+                    <ul class="heroHighlights" aria-label="BeforeShare advantages">
+                        <li>No app switching</li>
+                        <li>Works from the share sheet</li>
+                        <li>On-device, no uploads</li>
                     </ul>
-                    <div class="downloadButtonsContainer">
+                    <div class="heroActions">
                         <a class="appStoreLink" href="{{ site.appstore_link }}" target="_blank" rel="noopener" aria-label="Download {{ site.app_name }} on the App Store">
                             <img class="appStore" src="{{ 'assets/appstore.png' | relative_url }}" alt="Download on the App Store">
                         </a>
+                        <a class="secondaryButton" href="#how-it-works">See the 3-step flow</a>
                     </div>
+                    <p class="heroNote">People are not looking for another editing tool. They are about to share a photo and want to know whether it is leaking private information.</p>
                 </div>
 
-                <div class="heroVisual" aria-label="BeforeShare app preview">
-                    <div class="privacyHalo" aria-hidden="true"></div>
-                    <div class="heroDevice">
-                        <div class="phoneMockup">
-                            <span class="phoneNotch" aria-hidden="true"></span>
-                            <img class="heroPreviewImage" src="{{ site.hero_preview_image | relative_url }}" alt="Privacy cleaned iPhone photo with a blurred license plate and removed metadata">
+                <div class="heroVisual heroVisualFlow" aria-label="BeforeShare pre-share privacy check flow">
+                    <div class="heroVisualGlow heroVisualGlowHot" aria-hidden="true"></div>
+                    <div class="heroVisualGlow heroVisualGlowCool" aria-hidden="true"></div>
+
+                    <figure class="heroScreen heroScreenShare">
+                        <div class="visualLabel">Step 1 · Open Share</div>
+                        <img class="heroScreenImage" src="{{ 'assets/screenshot/share-extension-step.png' | relative_url }}" alt="Choosing BeforeShare from the iPhone Photos share sheet">
+                    </figure>
+
+                    <figure class="heroScreen heroScreenScan">
+                        <div class="visualLabel visualLabelAlert">Step 2 · Review risks</div>
+                        <img class="heroScreenImage" src="{{ 'assets/screenshot/share-extension-scan.png' | relative_url }}" alt="BeforeShare detecting a privacy risk before the photo is shared">
+                    </figure>
+
+                    <div class="visualBadge visualBadgeRisk">1 risk found</div>
+                    <div class="visualBadge visualBadgeTrust">On-device only</div>
+                    <p class="heroPrompt">Before you tap send, the check is already done.</p>
+                </div>
+            </section>
+
+            <section class="contentSection flowSection" id="how-it-works" aria-labelledby="flow-title">
+                <div class="sectionIntro">
+                    <p class="sectionEyebrow">Instant demo</p>
+                    <h2 id="flow-title">It happens right inside Photos on iPhone</h2>
+                    <p>Pick a photo, tap Share, choose BeforeShare. It scans for issues immediately, so you can review privacy risks before the image actually goes out.</p>
+                </div>
+
+                <div class="flowGrid">
+                    <article class="flowStepCard">
+                        <span class="stepNumber">01</span>
+                        <h3>Choose a photo and tap Share</h3>
+                        <p>You keep the habit you already have. When you are ready to send, open BeforeShare directly from the iPhone share sheet.</p>
+                        <div class="flowImageFrame">
+                            <img src="{{ 'assets/screenshot/share-extension-step.png' | relative_url }}" alt="Opening the iPhone share sheet and selecting BeforeShare">
                         </div>
-                        <div class="statusBadge statusBadgePrimary">Privacy cleaned</div>
-                        <div class="statusBadge statusBadgeSecondary">Metadata removed</div>
+                    </article>
+
+                    <article class="flowStepCard flowStepCardHighlight">
+                        <span class="stepNumber">02</span>
+                        <h3>See the risks before anyone else does</h3>
+                        <p>License plates, location clues, QR codes, and contact details are flagged so you can tell, immediately, when a photo should not be shared as-is.</p>
+                        <div class="flowImageFrame">
+                            <img src="{{ 'assets/screenshot/share-extension-scan.png' | relative_url }}" alt="BeforeShare finding one privacy risk that needs attention">
+                        </div>
+                    </article>
+
+                    <article class="flowStepCard flowStepCardResult">
+                        <span class="stepNumber">03</span>
+                        <h3>Fix it, then send with confidence</h3>
+                        <p>Handle everything in one tap or review items one by one. It takes seconds, and the problem stays on your phone instead of in someone else&apos;s inbox.</p>
+                        <div class="flowImageFrame flowImageFrameResult">
+                            <img src="{{ 'assets/screenshot/privacy-cleaned-photo-license-plate-blurred.jpg' | relative_url }}" alt="A cleaned photo with the license plate blurred before sharing">
+                        </div>
+                    </article>
+                </div>
+
+                <p class="flowStatement">Before you tap send, we have already checked the photo for you.</p>
+            </section>
+
+            <section class="contentSection riskSection" id="risk" aria-labelledby="risk-title">
+                <div class="sectionIntro riskIntro">
+                    <p class="sectionEyebrow">The risk</p>
+                    <h2 id="risk-title">Most people think they are sharing an ordinary photo</h2>
+                    <p>In reality, a single image can reveal more than intended, and once it is sent, you do not get that exposure back.</p>
+                </div>
+
+                <div class="riskGrid" role="list" aria-label="Common photo privacy risks">
+                    <article class="riskCard" role="listitem">
+                        <span class="riskTag">License plate</span>
+                        <h3>A casual car photo can expose information you never meant to publish</h3>
+                        <p>Once it is sent to a group chat, social feed, or marketplace listing, you no longer control where that image travels next.</p>
+                    </article>
+
+                    <article class="riskCard" role="listitem">
+                        <span class="riskTag">Location clues</span>
+                        <h3>Scenery shots and everyday photos can reveal where you were</h3>
+                        <p>What is visible in the frame, combined with EXIF metadata, can tell strangers more about your location than you intended.</p>
+                    </article>
+
+                    <article class="riskCard" role="listitem">
+                        <span class="riskTag">QR codes</span>
+                        <h3>A screenshot or poster can share access you never meant to pass along</h3>
+                        <p>Invite links, tickets, payment codes, or internal group QR codes are easy to overlook and even easier to spread.</p>
+                    </article>
+
+                    <article class="riskCard" role="listitem">
+                        <span class="riskTag">Personal details</span>
+                        <h3>Names, phone numbers, email addresses, and addresses often hide in plain sight</h3>
+                        <p>They may not jump out at first glance, which is exactly why people notice them only after the photo is already gone.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="contentSection solutionSection" id="difference" aria-labelledby="solution-title">
+                <div class="solutionShell">
+                    <div class="solutionCopy">
+                        <p class="sectionEyebrow">The fix</p>
+                        <h2 id="solution-title">BeforeShare is not a photo editor. It is a pre-sharing safety layer.</h2>
+                        <p>BeforeShare detects privacy risks before you share and gives you quick ways to fix them. No app switching. No new workflow. No sending photos to the cloud.</p>
+
+                        <ul class="solutionList" aria-label="How BeforeShare works">
+                            <li>Launches directly from the share sheet, at the exact moment a photo is about to leave your phone</li>
+                            <li>Scans for license plates, location clues, QR codes, and personal details before you send</li>
+                            <li>Suggests fast fixes in one tap, while still letting you review items individually</li>
+                        </ul>
+                    </div>
+
+                    <div class="differenceGrid">
+                        <article class="differenceCard differenceCardPrimary">
+                            <p class="differenceEyebrow">The conversion point</p>
+                            <h3>You do not need to open an app</h3>
+                            <p>BeforeShare appears in the iPhone share menu and works at the moment you are actually preparing to send the photo.</p>
+                        </article>
+
+                        <article class="differenceCard">
+                            <h3>It adds protection without changing the habit</h3>
+                            <p>There is no new flow to learn. It simply adds a privacy check to the action people are already taking.</p>
+                        </article>
+
+                        <article class="differenceCard">
+                            <h3>Low friction by design</h3>
+                            <p>Fix everything in one tap, or review each item manually. Either way, the whole process takes seconds.</p>
+                        </article>
                     </div>
                 </div>
             </section>
 
-            {% include detects.html %}
-            {% include comparison.html %}
-            {% include features.html %}
-            {% include steps.html %}
-            {% include usecases.html %}
-            {% include guides-home.html %}
-            {% include trust.html %}
+            <section class="contentSection trustSection" id="trust" aria-labelledby="trust-title">
+                <div class="trustCard trustCardConversion">
+                    <div class="trustCopy">
+                        <p class="sectionEyebrow">Trust</p>
+                        <h2 id="trust-title">Everything happens on-device</h2>
+                        <p>Your photos are not uploaded. Your privacy does not leave your phone. BeforeShare stops problems before the image goes out instead of sending your photo somewhere else for review.</p>
+                    </div>
+                    <ul class="trustPoints" aria-label="BeforeShare privacy guarantees">
+                        <li>No photo uploads</li>
+                        <li>No cloud scanning</li>
+                        <li>No third-party access to your photos</li>
+                    </ul>
+                </div>
+            </section>
+
             {% include faq.html %}
+
+            <section class="contentSection ctaSection" aria-labelledby="cta-title">
+                <div class="ctaPanel">
+                    <div class="ctaCopy">
+                        <p class="sectionEyebrow">Ready to use it?</p>
+                        <h2 id="cta-title">Before your next photo leaves your phone, run it through BeforeShare</h2>
+                        <p>Keep your normal sharing flow. Add a privacy check right before send.</p>
+                    </div>
+
+                    <div class="ctaActions">
+                        <a class="appStoreLink" href="{{ site.appstore_link }}" target="_blank" rel="noopener" aria-label="Download {{ site.app_name }} on the App Store">
+                            <img class="appStore" src="{{ 'assets/appstore.png' | relative_url }}" alt="Download on the App Store">
+                        </a>
+                        <p class="ctaMicrocopy">Download now</p>
+                    </div>
+                </div>
+            </section>
         </main>
 
         {% include footer.html %}

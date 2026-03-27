@@ -22,6 +22,7 @@ app_icon                                  :
 app_name                                  : BeforeShare
 app_price                                 :
 app_description                           : Blur faces, hide license plates, remove EXIF metadata, and clean private details before sharing photos on iPhone. Everything runs on-device.
+brand_tagline                             : Check before you share
 
 enable_smart_app_banner                   : true
 
@@ -145,35 +146,29 @@ guides                                    :
     cta_label                             : Read the guide
 
 trust_title                               : Privacy First
-trust_body                                : BeforeShare processes photos entirely on your device. No photos are uploaded to servers, and no photo or face data is shared with third parties.
+trust_body                                : BeforeShare processes photos entirely on your device. No uploads. No cloud scanning.
 trust_points                              :
   - On-device photo processing
   - No server uploads
   - No photo or face data sharing
 
-faq_title                                 : Frequently asked questions about photo privacy on iPhone
-faq_intro                                 : Use these quick answers to understand how BeforeShare helps you blur faces, hide license plates, and remove metadata before you share.
+faq_title                                 : Questions people ask before they try BeforeShare
+faq_intro                                 : These are the objections and uncertainties most people have right before they decide whether to trust a photo privacy tool.
 faqs                                      :
-  - question                              : How do I blur faces in photos on iPhone?
-    answer                                : BeforeShare scans photos on-device and helps you blur faces before sharing. See our [guide to blurring faces on iPhone](/blog/how-to-blur-faces-in-photos-on-iphone/).
-
-  - question                              : How do I remove EXIF metadata from a photo?
-    answer                                : BeforeShare removes location and EXIF metadata before export. See our [guide to removing EXIF metadata on iPhone](/blog/how-to-remove-exif-from-photos-on-iphone/).
-
-  - question                              : Can I hide a license plate before posting a photo online?
-    answer                                : Yes. BeforeShare detects license plates and helps you block them before sharing. See our [license plate privacy guide](/blog/how-to-hide-license-plates-in-photos/).
-
   - question                              : Does BeforeShare upload my photos?
-    answer                                : No. Photos are processed entirely on your device. No uploads. No cloud scanning.
+    answer                                : No. BeforeShare scans and processes photos on your device. Your images are not uploaded for cloud review.
 
-  - question                              : What kinds of private details can BeforeShare detect?
-    answer                                : BeforeShare can detect faces, license plates, QR codes, phone numbers, email addresses, and location metadata before you export a cleaner version.
+  - question                              : Do I need to open the app first?
+    answer                                : No. BeforeShare is available from the iPhone share sheet, so you can run it when you are already about to send the photo.
 
-  - question                              : Is BeforeShare only for social media posts?
-    answer                                : No. It is also useful for family photos, screenshots, and marketplace listings. You can explore more use cases in our [privacy guides](/blog/).
+  - question                              : What kinds of risks can it catch?
+    answer                                : BeforeShare helps flag license plates, QR codes, contact details, and other privacy-sensitive content before you share.
 
-footer_cta_title                          : Download BeforeShare on the App Store
-footer_cta_subtitle                       : Scan your photos for privacy risks before they leave your iPhone.
+  - question                              : Does it take a long time to fix things?
+    answer                                : No. You can handle everything in one tap or review items one by one, and the full flow usually takes just a few seconds.
+
+footer_cta_title                          : Check the photo before it leaves your phone
+footer_cta_subtitle                       : Run BeforeShare from the iPhone share sheet and catch privacy risks right before you send.
 
 
 # Information About Yourself

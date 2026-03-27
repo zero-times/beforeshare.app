@@ -8,16 +8,16 @@
 			{% endif %}
 			<div class="brandCopy">
 				<p class="headerName">{{ site.app_name }}</p>
-				<p class="headerTag">{{ site.hero_eyebrow }}</p>
+				<p class="headerTag">{{ site.brand_tagline | default: site.hero_eyebrow }}</p>
 			</div>
 		</a>
 	</div>
-		<nav class="scroll" aria-label="Primary">
+	<nav class="scroll" aria-label="Primary">
 		<ul>
-			<li><a href="{{ '/' | relative_url }}#features" target="_self">Features</a></li>
-			<li><a href="{{ '/' | relative_url }}#how-it-works" target="_self">How It Works</a></li>
-			<li><a href="{{ '/' | relative_url }}#use-cases" target="_self">Use Cases</a></li>
-			<li><a href="{{ '/blog/' | relative_url }}" target="_self">Guides</a></li>
+			<li><a href="{{ '/' | relative_url }}#how-it-works" target="_self">Demo</a></li>
+			<li><a href="{{ '/' | relative_url }}#risk" target="_self">Risks</a></li>
+			<li><a href="{{ '/' | relative_url }}#difference" target="_self">Why BeforeShare</a></li>
+			<li><a href="{{ '/' | relative_url }}#download" target="_self">Download</a></li>
 		</ul>
 	</nav>
 </header>

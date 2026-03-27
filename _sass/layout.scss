@@ -28,9 +28,10 @@
 	min-height: 100vh;
 	color: #eef4ff;
 	background:
-		radial-gradient(circle at top left, rgba($accent-color, 0.2), transparent 32%),
-		radial-gradient(circle at top right, rgba(#78a5ff, 0.18), transparent 28%),
-		linear-gradient(180deg, #07111d 0%, #09182a 48%, #06101b 100%);
+		radial-gradient(circle at 14% 8%, rgba(#ff8f6b, 0.18), transparent 22%),
+		radial-gradient(circle at 84% 10%, rgba($accent-color, 0.22), transparent 26%),
+		radial-gradient(circle at 62% 48%, rgba(#ffc46a, 0.08), transparent 30%),
+		linear-gradient(180deg, #07111d 0%, #09182a 46%, #050b13 100%);
 }
 
 .homeMain {
@@ -124,6 +125,10 @@
 	padding: 42px 0 82px;
 }
 
+.heroSectionConversion {
+	padding-top: 32px;
+}
+
 .heroEyebrow,
 .sectionEyebrow {
 	display: inline-flex;
@@ -179,10 +184,42 @@
 	border: 1px solid rgba(#c7d7f5, 0.12);
 }
 
-.downloadButtonsContainer {
+.heroActions {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	gap: 16px;
 	margin-top: 34px;
+}
+
+.secondaryButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 58px;
+	padding: 0 24px;
+	border-radius: 999px;
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #f4f8ff;
+	background: rgba(#ffffff, 0.04);
+	border: 1px solid rgba(#d7e4ff, 0.14);
+	box-shadow: inset 0 1px 0 rgba(#ffffff, 0.08);
+}
+
+.secondaryButton:hover,
+.secondaryButton:active {
+	color: #ffffff;
+	background: rgba(#ffffff, 0.08);
+	border-color: rgba($accent-color, 0.28);
+}
+
+.heroNote {
+	max-width: 58ch;
+	margin-top: 20px;
+	font-size: 1.55rem;
+	line-height: 1.8;
+	color: rgba(#d7e4ff, 0.66);
 }
 
 .appStoreLink:hover,
@@ -202,6 +239,127 @@
 	justify-content: center;
 	align-items: center;
 	padding: 26px 0;
+}
+
+.heroVisualFlow {
+	min-height: 760px;
+	align-items: stretch;
+}
+
+.heroVisualGlow {
+	position: absolute;
+	border-radius: 50%;
+	filter: blur(12px);
+}
+
+.heroVisualGlowHot {
+	right: 0;
+	top: 8%;
+	width: 260px;
+	height: 260px;
+	background: radial-gradient(circle, rgba(#ff8a5c, 0.34) 0%, rgba(#ff8a5c, 0.08) 48%, transparent 74%);
+}
+
+.heroVisualGlowCool {
+	left: 10%;
+	bottom: 8%;
+	width: 300px;
+	height: 300px;
+	background: radial-gradient(circle, rgba($accent-color, 0.3) 0%, rgba($accent-color, 0.08) 44%, transparent 76%);
+}
+
+.heroScreen {
+	position: absolute;
+	width: min(100%, 276px);
+	padding: 14px;
+	border-radius: 32px;
+	background:
+		linear-gradient(180deg, rgba(#ffffff, 0.12), rgba(#ffffff, 0.04)),
+		linear-gradient(180deg, rgba(#08111d, 0.92), rgba(#030811, 0.98));
+	border: 1px solid rgba(#d7e4ff, 0.1);
+	box-shadow: 0 34px 64px rgba(#02060b, 0.3);
+	backdrop-filter: blur(12px);
+}
+
+.heroScreenShare {
+	left: 10px;
+	top: 0;
+	transform: rotate(-8deg);
+}
+
+.heroScreenScan {
+	right: 0;
+	top: 92px;
+	transform: rotate(6deg);
+}
+
+.heroScreenImage {
+	width: 100%;
+	border-radius: 22px;
+}
+
+.visualLabel {
+	display: inline-flex;
+	align-items: center;
+	margin-bottom: 14px;
+	padding: 9px 14px;
+	border-radius: 999px;
+	font-size: 1.25rem;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #eef5ff;
+	background: rgba(#ffffff, 0.06);
+}
+
+.visualLabelAlert {
+	background: rgba(#ff8a5c, 0.16);
+	color: #ffd6c8;
+}
+
+.visualBadge {
+	position: absolute;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 14px 18px;
+	border-radius: 18px;
+	font-size: 1.45rem;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+	box-shadow: 0 18px 34px rgba(#02060b, 0.24);
+}
+
+.visualBadgeRisk {
+	left: 20px;
+	bottom: 144px;
+	color: #2f1009;
+	background: linear-gradient(180deg, #ffd9c9 0%, #ff9d75 100%);
+}
+
+.visualBadgeTrust {
+	right: 0;
+	bottom: 46px;
+	color: #06243b;
+	background: linear-gradient(180deg, #d6fbff 0%, #8ff1ff 100%);
+}
+
+.heroPrompt {
+	position: absolute;
+	left: 34px;
+	bottom: 0;
+	max-width: 32rem;
+	padding: 18px 20px;
+	border-radius: 24px;
+	font-size: 1.7rem;
+	font-weight: 700;
+	line-height: 1.55;
+	color: #f4f8ff;
+	background:
+		linear-gradient(135deg, rgba(#08111d, 0.96), rgba(#10203b, 0.94)),
+		linear-gradient(180deg, rgba(#78a5ff, 0.12), rgba(#7fe7ff, 0.08));
+	border: 1px solid rgba(#d7e4ff, 0.12);
+	box-shadow: 0 28px 54px rgba(#02060b, 0.24);
 }
 
 .privacyHalo {
@@ -277,6 +435,216 @@
 
 .contentSection {
 	padding-top: 38px;
+}
+
+.flowGrid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.flowStepCard {
+	height: 100%;
+	padding: 24px;
+	border-radius: 28px;
+	background:
+		linear-gradient(180deg, rgba(#ffffff, 0.06), rgba(#ffffff, 0.03));
+	border: 1px solid rgba(#d7e4ff, 0.08);
+	box-shadow: 0 24px 40px rgba(#02060b, 0.18);
+}
+
+.flowStepCardHighlight {
+	background:
+		linear-gradient(180deg, rgba(#ff8a5c, 0.12), rgba(#ffffff, 0.04)),
+		linear-gradient(180deg, rgba(#ffffff, 0.06), rgba(#ffffff, 0.03));
+	border-color: rgba(#ffbda1, 0.16);
+}
+
+.flowStepCard h3,
+.riskCard h3,
+.differenceCard h3,
+.ctaCopy h2 {
+	color: #f5f8ff;
+}
+
+.flowStepCard h3 {
+	margin-top: 18px;
+	font-size: 2.45rem;
+}
+
+.flowStepCard p {
+	margin-top: 12px;
+	font-size: 1.72rem;
+	line-height: 1.76;
+	color: rgba(#d6e2f7, 0.8);
+}
+
+.flowImageFrame {
+	margin-top: 22px;
+	padding: 12px;
+	border-radius: 24px;
+	background: rgba(#050c16, 0.78);
+	border: 1px solid rgba(#d7e4ff, 0.08);
+}
+
+.flowImageFrame img {
+	width: 100%;
+	border-radius: 18px;
+}
+
+.flowImageFrameResult {
+	background:
+		linear-gradient(180deg, rgba(#7fe7ff, 0.12), rgba(#ffffff, 0.02)),
+		rgba(#050c16, 0.72);
+}
+
+.flowStatement {
+	max-width: 54rem;
+	margin-top: 24px;
+	font-size: 2.1rem;
+	font-weight: 700;
+	line-height: 1.6;
+	color: #f5f8ff;
+}
+
+.riskSection {
+	position: relative;
+}
+
+.riskGrid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px;
+}
+
+.riskCard {
+	height: 100%;
+	padding: 24px;
+	border-radius: 28px;
+	background:
+		linear-gradient(180deg, rgba(#ffffff, 0.05), rgba(#ffffff, 0.03));
+	border: 1px solid rgba(#d7e4ff, 0.08);
+	box-shadow: 0 24px 40px rgba(#02060b, 0.18);
+}
+
+.riskTag {
+	display: inline-flex;
+	align-items: center;
+	padding: 9px 12px;
+	border-radius: 999px;
+	font-size: 1.2rem;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: #ffd6c8;
+	background: rgba(#ff8a5c, 0.12);
+	border: 1px solid rgba(#ffb08a, 0.14);
+}
+
+.riskCard h3 {
+	margin-top: 16px;
+	font-size: 2.35rem;
+	line-height: 1.35;
+}
+
+.riskCard p {
+	margin-top: 12px;
+	font-size: 1.68rem;
+	line-height: 1.76;
+	color: rgba(#d6e2f7, 0.76);
+}
+
+.solutionShell {
+	display: grid;
+	grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+	gap: 24px;
+	align-items: stretch;
+}
+
+.solutionCopy {
+	padding: 30px;
+	border-radius: 32px;
+	background:
+		linear-gradient(135deg, rgba(#ffffff, 0.08), rgba(#ffffff, 0.03)),
+		linear-gradient(180deg, rgba(#78a5ff, 0.08), rgba(#7fe7ff, 0.05));
+	border: 1px solid rgba(#d7e4ff, 0.1);
+	box-shadow: 0 24px 50px rgba(#02060b, 0.2);
+}
+
+.solutionCopy h2 {
+	font-size: clamp(3rem, 4vw, 4.6rem);
+	color: #f5f8ff;
+}
+
+.solutionCopy p:last-of-type {
+	margin-top: 16px;
+	font-size: 1.85rem;
+	line-height: 1.78;
+	color: rgba(#d6e2f7, 0.82);
+}
+
+.solutionList {
+	display: grid;
+	gap: 12px;
+	margin-top: 24px;
+	list-style: none;
+}
+
+.solutionList li {
+	padding: 14px 16px;
+	border-radius: 18px;
+	background: rgba(#ffffff, 0.04);
+	border: 1px solid rgba(#d7e4ff, 0.08);
+	color: #eef4ff;
+	font-size: 1.65rem;
+	line-height: 1.65;
+}
+
+.solutionList li::before {
+	content: "•";
+	margin-right: 10px;
+	color: $accent-color;
+}
+
+.differenceGrid {
+	display: grid;
+	gap: 16px;
+}
+
+.differenceCard {
+	padding: 24px;
+	border-radius: 28px;
+	background:
+		linear-gradient(180deg, rgba(#ffffff, 0.06), rgba(#ffffff, 0.03));
+	border: 1px solid rgba(#d7e4ff, 0.08);
+	box-shadow: 0 24px 40px rgba(#02060b, 0.18);
+}
+
+.differenceCardPrimary {
+	background:
+		linear-gradient(180deg, rgba(#ff8a5c, 0.14), rgba(#ffffff, 0.04)),
+		linear-gradient(180deg, rgba(#ffffff, 0.06), rgba(#ffffff, 0.03));
+	border-color: rgba(#ffb08a, 0.18);
+}
+
+.differenceEyebrow {
+	font-size: 1.25rem;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: #ffd6c8;
+}
+
+.differenceCard h3 {
+	margin-top: 14px;
+	font-size: 2.45rem;
+}
+
+.differenceCard p {
+	margin-top: 10px;
+	font-size: 1.72rem;
+	line-height: 1.74;
+	color: rgba(#d6e2f7, 0.8);
 }
 
 .sectionIntro {
@@ -598,6 +966,10 @@
 	color: rgba(#d6e2f7, 0.8);
 }
 
+.trustCardConversion {
+	align-items: center;
+}
+
 .trustPoints {
 	display: grid;
 	gap: 12px;
@@ -623,6 +995,46 @@
 
 .siteFooter {
 	padding: 34px 0 72px;
+}
+
+.ctaPanel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 28px;
+	padding: 30px;
+	border-radius: 32px;
+	background:
+		linear-gradient(135deg, rgba(#08111d, 0.96), rgba(#10203b, 0.96)),
+		linear-gradient(180deg, rgba(#78a5ff, 0.16), rgba(#7fe7ff, 0.08));
+	border: 1px solid rgba(#d7e4ff, 0.12);
+	box-shadow: 0 24px 50px rgba(#02060b, 0.22);
+}
+
+.ctaCopy h2 {
+	font-size: clamp(3rem, 4vw, 4.6rem);
+}
+
+.ctaCopy p:last-child {
+	margin-top: 14px;
+	font-size: 1.8rem;
+	line-height: 1.72;
+	color: rgba(#d6e2f7, 0.76);
+}
+
+.ctaActions {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 14px;
+}
+
+.ctaMicrocopy {
+	font-size: 1.45rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: rgba(#d7e4ff, 0.64);
 }
 
 .footerCta {
@@ -1089,14 +1501,18 @@
 	.useCaseGrid,
 	.featureGrid,
 	.trustCard,
-	.guidesGrid {
+	.guidesGrid,
+	.flowGrid,
+	.riskGrid,
+	.solutionShell {
 		grid-template-columns: 1fr;
 	}
 
 	.siteHeader,
 	.footerCta,
 	.footerMeta,
-	.articleCta {
+	.articleCta,
+	.ctaPanel {
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -1133,14 +1549,45 @@
 		padding-top: 6px;
 	}
 
-	.statusBadgePrimary {
-		right: 4px;
-		top: 52px;
+	.heroVisualFlow {
+		min-height: auto;
+		padding-top: 0;
+		padding-bottom: 34px;
 	}
 
-	.statusBadgeSecondary {
-		left: 0;
-		bottom: 42px;
+	.heroScreen,
+	.heroScreenShare,
+	.heroScreenScan,
+	.visualBadge,
+	.heroPrompt {
+		position: relative;
+		left: auto;
+		right: auto;
+		top: auto;
+		bottom: auto;
+		transform: none;
+	}
+
+	.heroScreen {
+		width: min(100%, 360px);
+	}
+
+	.heroScreenScan {
+		margin-top: -24px;
+		margin-left: auto;
+	}
+
+	.visualBadge {
+		margin-top: 14px;
+	}
+
+	.heroPrompt {
+		max-width: none;
+		margin-top: 18px;
+	}
+
+	.differenceGrid {
+		grid-template-columns: 1fr;
 	}
 
 	.comparisonGrid {
@@ -1184,6 +1631,9 @@
 
 	.heroSubtitle,
 	.sectionIntro p,
+	.flowStepCard p,
+	.riskCard p,
+	.differenceCard p,
 	.featureText p,
 	.stepCard p,
 	.useCaseCard p,
@@ -1192,34 +1642,27 @@
 	.subpageDek,
 	.articleCtaCopy p:last-child,
 	.guideCard p:last-of-type,
-	.faqAnswer {
+	.faqAnswer,
+	.ctaCopy p:last-child {
 		font-size: 1.7rem;
 	}
 
-	.phoneMockup {
-		width: min(100%, 300px);
-		padding: 14px;
-		border-radius: 34px;
-	}
-
-	.heroPreviewImage {
-		border-radius: 24px;
-	}
-
-	.statusBadge {
-		position: static;
-		display: inline-flex;
-		margin-top: 14px;
-	}
-
-	.heroDevice {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	.heroActions,
+	.ctaActions {
+		width: 100%;
 	}
 
 	.featureCard {
 		flex-direction: column;
+	}
+
+	.flowStepCard,
+	.riskCard,
+	.differenceCard,
+	.solutionCopy,
+	.ctaPanel {
+		padding: 22px;
+		border-radius: 26px;
 	}
 
 	.page {
@@ -1256,6 +1699,11 @@
 	.detectItem {
 		font-size: 1.6rem;
 	}
+
+	.heroNote,
+	.flowStatement {
+		font-size: 1.7rem;
+	}
 }
 
 @media only screen and (max-width: 560px) {
@@ -1272,13 +1720,32 @@
 		height: 58px;
 	}
 
+	.heroCopy h1 {
+		max-width: none;
+	}
+
+	.heroActions .appStoreLink,
+	.heroActions .secondaryButton,
+	.ctaActions .appStoreLink {
+		width: 100%;
+	}
+
+	.secondaryButton {
+		width: 100%;
+	}
+
 	.comparisonCard,
 	.featureCard,
 	.stepCard,
 	.useCaseCard,
 	.footerCta,
 	.guideCard,
-	.articleCta {
+	.articleCta,
+	.flowStepCard,
+	.riskCard,
+	.differenceCard,
+	.solutionCopy,
+	.ctaPanel {
 		padding: 20px;
 		border-radius: 24px;
 	}
